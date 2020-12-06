@@ -28,6 +28,7 @@
 		51186E28257A13E000ADB2E2 /* SimpleOATH-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleOATH-Bridging-Header.h"; sourceTree = "<group>"; };
 		51186E30257A1EA600ADB2E2 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		51186E34257A1FFF00ADB2E2 /* CredentialsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsProvider.swift; sourceTree = "<group>"; };
+		51186E3E257A777100ADB2E2 /* SimpleOATHDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleOATHDebug.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		51186E0725796D4B00ADB2E2 /* SimpleOATH */ = {
 			isa = PBXGroup;
 			children = (
+				51186E3E257A777100ADB2E2 /* SimpleOATHDebug.entitlements */,
 				51186E0825796D4B00ADB2E2 /* SimpleOATHApp.swift */,
 				51186E0A25796D4B00ADB2E2 /* CredentialListView.swift */,
 				51186E2225797B7200ADB2E2 /* CredentialView.swift */,
@@ -291,9 +293,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SimpleOATH/SimpleOATHDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleOATH/Preview Content\"";
-				DEVELOPMENT_TEAM = J6YR5MWMJ7;
+				DEVELOPMENT_TEAM = JQ24ZDH48X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SimpleOATH/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -301,7 +304,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = se.utbult.jens.SimpleOATH;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yubico.demo.SimpleOATH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

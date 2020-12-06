@@ -11,8 +11,8 @@ struct CredentialListView: View {
                 }.onDelete(perform: delete)
             }
             .navigationBarTitle(Text("Accounts"))
-            .navigationBarItems(leading: Button(action: { print("add credential") } ) { Text("Add credential") },
-                                trailing: Button(action: { print("refresh") } ) { Text("Refresh") }
+            .navigationBarItems(leading: Button(action: { addCredential() } ) { Text("Add credential") },
+                                trailing: Button(action: { credentialsProvider.refresh() } ) { Text("Refresh") }
             )
         }
     }
@@ -25,7 +25,7 @@ struct CredentialListView: View {
     
     func addCredential() {
         let randomNumber = arc4random() % 100
-        let credential = Credential(issuer: "Yubico", account: "jens.utbult+\(randomNumber)@yubico.com", otp: nil)
+        let credential = Credential(issuer: "Yubico", account: "john.doe+\(randomNumber)@yubico.com", otp: nil)
         credentialsProvider.add(credential: credential)
     }
 }

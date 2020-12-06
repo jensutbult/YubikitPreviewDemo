@@ -1,4 +1,4 @@
-åimport SwiftUI
+import SwiftUI
 
 @main
 struct SimpleOATHApp: App {

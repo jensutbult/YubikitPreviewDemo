@@ -1,4 +1,4 @@
-struct Credential: Identifiable {
+struct Credential: Identifiable, Equatable {
     let id = UUID()
     let issuer: String?
     let account: String
